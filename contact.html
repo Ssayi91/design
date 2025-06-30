@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Property & Design Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/254700123456" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-home text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold text-primary">Property & Design</h1>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent transition duration-300">Home</a>
+                <a href="interior.html" class="font-medium hover:text-accent transition duration-300">Interior Design</a>
+                <a href="estate.html" class="font-medium hover:text-accent transition duration-300">Real Estate</a>
+                <a href="portfolio.html" class="font-medium hover:text-accent transition duration-300">Portfolio</a>
+                <a href="about.html" class="font-medium hover:text-accent transition duration-300">About</a>
+                <a href="contact.html" class="font-medium text-accent border-b-2 border-accent pb-1">Contact</a>
+            </nav>
+            
+            <div class="flex items-center">
+                <button class="hidden md:block bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mr-4">
+                    Book Consultation
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium py-2 border-b border-gray-200">Home</a>
+                <a href="interior-design.html" class="font-medium py-2 border-b border-gray-200">Interior Design</a>
+                <a href="real-estate.html" class="font-medium py-2 border-b border-gray-200">Real Estate</a>
+                <a href="portfolio.html" class="font-medium py-2 border-b border-gray-200">Portfolio</a>
+                <a href="about.html" class="font-medium py-2 border-b border-gray-200">About</a>
+                <a href="contact.html" class="font-medium text-accent py-2 border-b border-gray-200">Contact</a>
+                <button class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mt-4">
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Contact <span class="text-accent">Us</span>
+            </h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                Have questions about our services or ready to start your project? Reach out to our team today.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-8">Get In Touch</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div class="contact-card bg-gray-50 p-6 rounded-xl">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Our Office</h3>
+                            <p class="text-gray-600">
+                                Westlands Business Center<br>
+                                5th Floor, ABC Tower<br>
+                                Nairobi, Kenya
+                            </p>
+                        </div>
+                        
+                        <div class="contact-card bg-gray-50 p-6 rounded-xl">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-phone-alt text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Call Us</h3>
+                            <p class="text-gray-600">
+                                +254 700 123 456<br>
+                                +254 720 987 654
+                            </p>
+                            <a href="tel:+254700123456" class="inline-block mt-3 text-accent font-medium">
+                                <i class="fas fa-phone mr-2"></i> Call Now
+                            </a>
+                        </div>
+                        
+                        <div class="contact-card bg-gray-50 p-6 rounded-xl">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Email Us</h3>
+                            <p class="text-gray-600">
+                                info@propertyanddesign.co.ke<br>
+                                support@propertyanddesign.co.ke
+                            </p>
+                            <a href="mailto:info@propertyanddesign.co.ke" class="inline-block mt-3 text-accent font-medium">
+                                <i class="fas fa-envelope mr-2"></i> Send Email
+                            </a>
+                        </div>
+                        
+                        <div class="contact-card bg-gray-50 p-6 rounded-xl">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">WhatsApp</h3>
+                            <p class="text-gray-600">
+                                Chat with our team directly for quick responses to your inquiries.
+                            </p>
+                            <a href="https://wa.me/254700123456" class="inline-block mt-3 bg-green-500 text-white px-4 py-2 rounded-lg font-medium">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Business Hours</h3>
+                        <ul class="business-hours bg-gray-50 p-6 rounded-xl">
+                            <li class="flex justify-between">
+                                <span>Monday - Friday</span>
+                                <span class="font-medium">8:00 AM - 5:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Saturday</span>
+                                <span class="font-medium">9:00 AM - 2:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Sunday</span>
+                                <span class="font-medium text-gray-400">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-blue-400 flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-8">Send Us a Message</h2>
+                    
+                    <form class="bg-gray-50 p-8 rounded-xl">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none" placeholder="+254 700 000 000">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none">
+                                    <option value="">Select a service</option>
+                                    <option value="interior">Interior Design</option>
+                                    <option value="residential">Residential Property</option>
+                                    <option value="commercial">Commercial Property</option>
+                                    <option value="affordable">Affordable Housing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none" placeholder="Message subject">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+                                <span class="ml-2 text-gray-700">I agree to the <a href="#" class="text-accent hover:underline">privacy policy</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-secondary transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Find Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Visit our office in Nairobi for a consultation about your next project
+                </p>
+            </div>
+            
+            <div id="map" class="shadow-xl">
+                <!-- Google Maps iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8191484999!2d36.81535631528637!3d-1.2830265359821003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d3b4be149f%3A0xf71a6d5d3d0b9d8e!2sWestlands%20Business%20Centre!5e0!3m2!1sen!2ske!4v1651234567890!5m2!1sen!2ske" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-primary mb-4">Nairobi Office</h3>
+                    <p class="text-gray-600 mb-4">
+                        Westlands Business Center<br>
+                        5th Floor, ABC Tower<br>
+                        Nairobi, Kenya
+                    </p>
+                    <a href="#" class="text-accent font-medium">
+                        <i class="fas fa-directions mr-2"></i> Get Directions
+                    </a>
+                </div>
+                
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-primary mb-4">Mombasa Office</h3>
+                    <p class="text-gray-600 mb-4">
+                        Nyali Centre, 3rd Floor<br>
+                        Mombasa Road<br>
+                        Mombasa, Kenya
+                    </p>
+                    <a href="#" class="text-accent font-medium">
+                        <i class="fas fa-directions mr-2"></i> Get Directions
+                    </a>
+                </div>
+                
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-primary mb-4">Kisumu Office</h3>
+                    <p class="text-gray-600 mb-4">
+                        Mega Plaza, 2nd Floor<br>
+                        Oginga Odinga Street<br>
+                        Kisumu, Kenya
+                    </p>
+                    <a href="#" class="text-accent font-medium">
+                        <i class="fas fa-directions mr-2"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Frequently <span class="text-primary">Asked Questions</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Find answers to common questions about our services and processes
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-3">How soon can you start a new interior design project?</h3>
+                    <p class="text-gray-600">
+                        We typically begin new projects within 2-3 weeks of contract signing. The exact timeline depends on the project scope and our current workload. During our initial consultation, we'll provide a clear timeline for your specific project.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-3">What areas do you serve for real estate services?</h3>
+                    <p class="text-gray-600">
+                        We serve all major urban areas in Kenya including Nairobi, Mombasa, Kisumu, Nakuru, and Eldoret. For interior design services, we work nationwide. Our affordable housing projects are currently focused in Nairobi, Kiambu, and Machakos counties.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-3">Do you offer payment plans for your properties?</h3>
+                    <p class="text-gray-600">
+                        Yes, we offer flexible payment plans for our residential properties. Options include our popular 10-15-75 plan (10% deposit, 15% during construction, 75% on completion) and mortgage partnerships with leading Kenyan banks. Contact us to discuss the best option for your situation.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-3">Can I see your previous interior design projects?</h3>
+                    <p class="text-gray-600">
+                        Absolutely! Visit our Portfolio page to see a selection of our completed interior design projects. We can also arrange a visit to our showroom or schedule a consultation to share more examples relevant to your specific project.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-3">How does the affordable housing initiative work?</h3>
+                    <p class="text-gray-600">
+                        Our affordable housing program offers quality 2-3 bedroom homes at accessible price points. We provide flexible payment plans and work with government housing programs where applicable. Our developments include community amenities and are built using sustainable, cost-effective construction methods.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-3">Do you provide services for Kenyans in the diaspora?</h3>
+                    <p class="text-gray-600">
+                        Yes, we have a dedicated diaspora program. We offer virtual consultations, property viewing via video call, and special payment plans. Our team can manage the entire process remotely, including property management after purchase.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-blue-100">
+                Contact us today to schedule a consultation with our team of experts.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Chat
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Property & Design</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Kenyan real estate and interior design services for local and diaspora clients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Interior Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Residential Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial Real Estate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Affordable Housing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Property Management</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="interior-design.html" class="text-gray-400 hover:text-white transition duration-300">Interior Design</a></li>
+                        <li><a href="real-estate.html" class="text-gray-400 hover:text-white transition duration-300">Real Estate</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>Westlands, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+254 700 123 456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@propertyanddesign.co.ke</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-primary"></i>
+                            <span>+254 700 654 321</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Property & Design Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="/contact.js"></script>
+</body>
+</html>

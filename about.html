@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Property & Design Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-home text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold text-primary">Property & Design</h1>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent transition duration-300">Home</a>
+                <a href="interior.html" class="font-medium hover:text-accent transition duration-300">Interior Design</a>
+                <a href="estate.html" class="font-medium hover:text-accent transition duration-300">Real Estate</a>
+                <a href="portfolio.html" class="font-medium hover:text-accent transition duration-300">Portfolio</a>
+                <a href="about.html" class="font-medium text-accent border-b-2 border-accent pb-1">About</a>
+                <a href="contact.html" class="font-medium hover:text-accent transition duration-300">Contact</a>
+            </nav>
+            
+            <div class="flex items-center">
+                <button class="hidden md:block bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mr-4">
+                    Book Consultation
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium py-2 border-b border-gray-200">Home</a>
+                <a href="interior-design.html" class="font-medium py-2 border-b border-gray-200">Interior Design</a>
+                <a href="real-estate.html" class="font-medium py-2 border-b border-gray-200">Real Estate</a>
+                <a href="portfolio.html" class="font-medium py-2 border-b border-gray-200">Portfolio</a>
+                <a href="about.html" class="font-medium text-accent py-2 border-b border-gray-200">About</a>
+                <a href="contact.html" class="font-medium py-2 border-b border-gray-200">Contact</a>
+                <button class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mt-4">
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-gray-50 to-gray-100 kenya-pattern">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                About <span class="text-accent">Our Company</span>
+            </h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                Creating inspiring spaces and communities across Kenya through innovative design and sustainable development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-6">Our <span class="text-accent">Story</span></h2>
+                <p class="text-gray-600 mb-6">
+                    Founded in 2010, Property & Design Kenya began with a vision to transform Kenya's real estate landscape through innovative design and sustainable development. What started as a small team of passionate architects and real estate professionals has grown into a leading company with projects across East Africa.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Our journey began with a single residential project in Nairobi. Today, we've completed over 200 projects including affordable housing communities, luxury residences, commercial spaces, and interior design transformations.
+                </p>
+                <p class="text-gray-600">
+                    At our core, we believe that well-designed spaces can transform lives and communities. We're proud to contribute to Kenya's development while preserving our rich cultural heritage through thoughtful design.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <div class="stat-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">13+</div>
+                    <p class="text-gray-600">Years of Experience</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">200+</div>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">50+</div>
+                    <p class="text-gray-600">Team Members</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bullseye text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        To create inspiring spaces that enhance quality of life through innovative design, sustainable practices, and community-focused development.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span>Deliver exceptional design and construction quality</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span>Promote sustainable building practices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span>Create spaces that celebrate Kenyan culture</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-eye text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        To be East Africa's leading integrated property and design company, transforming urban landscapes and setting new standards for sustainable living.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span>Pioneer innovative housing solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span>Develop sustainable communities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span>Set new standards for eco-friendly construction</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Core <span class="text-primary">Values</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    The principles that guide our work and relationships
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="value-card bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-primary mb-4">Innovation</h3>
+                    <p class="text-gray-600">
+                        We embrace creative solutions and technologies to solve Kenya's unique housing challenges while respecting our cultural heritage.
+                    </p>
+                </div>
+                
+                <div class="value-card bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-primary mb-4">Sustainability</h3>
+                    <p class="text-gray-600">
+                        We build responsibly, using eco-friendly materials and practices to minimize environmental impact and create healthier spaces.
+                    </p>
+                </div>
+                
+                <div class="value-card bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-primary mb-4">Community</h3>
+                    <p class="text-gray-600">
+                        We design spaces that foster connection and belonging, creating neighborhoods where Kenyans can thrive together.
+                    </p>
+                </div>
+                
+                <div class="value-card bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-primary mb-4">Excellence</h3>
+                    <p class="text-gray-600">
+                        We commit to the highest standards of craftsmanship, design, and service in every project we undertake.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary">Approach</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    How we create exceptional spaces and communities
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Research & Planning</h3>
+                    <p class="text-gray-600">
+                        We begin with thorough research to understand site conditions, community needs, and cultural context before developing comprehensive plans.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-pencil-ruler text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Design & Development</h3>
+                    <p class="text-gray-600">
+                        Our design process combines creativity with functionality, developing solutions that are beautiful, practical, and culturally relevant.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hands text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Implementation</h3>
+                    <p class="text-gray-600">
+                        We execute projects with precision, using quality materials and skilled craftsmen while maintaining strict quality control standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Leadership <span class="text-primary">Team</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Experienced professionals guiding our vision
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                <div class="team-member">
+                    <div class="team-photo rounded-full overflow-hidden bg-gray-200">
+                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                            <span class="text-3xl text-gray-500"><i class="fas fa-user"></i></span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">David Kamau</h3>
+                    <p class="text-accent mb-2">Founder & CEO</p>
+                    <p class="text-gray-600 text-sm">
+                        15+ years in architecture and development. Graduate of University of Nairobi.
+                    </p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo rounded-full overflow-hidden bg-gray-200">
+                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                            <span class="text-3xl text-gray-500"><i class="fas fa-user"></i></span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">Sarah Achieng</h3>
+                    <p class="text-accent mb-2">Head of Design</p>
+                    <p class="text-gray-600 text-sm">
+                        Award-winning designer with expertise in sustainable materials.
+                    </p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo rounded-full overflow-hidden bg-gray-200">
+                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                            <span class="text-3xl text-gray-500"><i class="fas fa-user"></i></span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary">James Omondi</h3>
+                    <p class="text-accent mb-2">Real Estate Director</p>
+                    <p class="text-gray-600 text-sm">
+                        12+ years experience in affordable housing solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-blue-100">
+                Partner with us to create exceptional spaces that transform lives and communities.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                    Contact Our Team
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                    View Our Portfolio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Property & Design</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Kenyan real estate and interior design services for local and diaspora clients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Interior Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Residential Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial Real Estate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Affordable Housing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Property Management</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>Westlands, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+254 700 123 456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@propertyanddesign.co.ke</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-primary"></i>
+                            <span>+254 700 654 321</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Property & Design Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="about.js"></script>
+</body>
+</html>

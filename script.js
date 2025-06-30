@@ -13,8 +13,7 @@
                 }
             }
         }    
-        
-        
+    
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
