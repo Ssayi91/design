@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property & Design | Real Estate & Interior Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-home text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold text-primary">Property & Design</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="font-medium text-accent border-b-2 border-accent pb-1">Home</a>
+                <a href="#" class="font-medium hover:text-accent transition duration-300">Interior Design</a>
+                <a href="#" class="font-medium hover:text-accent transition duration-300">Real Estate</a>
+                <a href="#" class="font-medium hover:text-accent transition duration-300">Portfolio</a>
+                <a href="#" class="font-medium hover:text-accent transition duration-300">About</a>
+                <a href="#" class="font-medium hover:text-accent transition duration-300">Contact</a>
+            </nav>
+            
+            <div class="flex items-center">
+                <button class="hidden md:block bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mr-4">
+                    Schedule Consultation
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="#" class="font-medium text-accent py-2 border-b border-gray-200">Home</a>
+                <a href="#" class="font-medium py-2 border-b border-gray-200">Interior Design</a>
+                <a href="#" class="font-medium py-2 border-b border-gray-200">Real Estate</a>
+                <a href="#" class="font-medium py-2 border-b border-gray-200">Portfolio</a>
+                <a href="#" class="font-medium py-2 border-b border-gray-200">About</a>
+                <a href="#" class="font-medium py-2 border-b border-gray-200">Contact</a>
+                <button class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mt-4">
+                    Schedule Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Transform Spaces, <span class="text-accent">Find Homes</span>
+                </h1>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Property & Design brings together premium real estate services and exceptional interior design to create spaces that inspire.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-primary transition duration-300">
+                        Explore Properties
+                    </button>
+                    <button class="border-2 border-accent text-accent px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition duration-300">
+                        View Design Portfolio
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="bg-primary w-80 h-80 rounded-full absolute -top-6 -left-6 z-0"></div>
+                    <div class="bg-accent w-72 h-72 rounded-full absolute -bottom-6 -right-6 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Luxury Home" 
+                         class="rounded-2xl shadow-2xl relative z-10 w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary">Services</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We offer comprehensive solutions for your property and design needs, serving both local and international clients.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-couch text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Interior Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Transform your space with our bespoke interior design services. From concept to completion, we create environments that reflect your personality and lifestyle.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2 text-accent"></i>
+                            <span>Residential & Commercial Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2 text-accent"></i>
+                            <span>Space Planning & Layout</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2 text-accent"></i>
+                            <span>Furniture Selection & Procurement</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-primary font-medium flex items-center">
+                        Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-building text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Real Estate</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Find your dream property with our premium real estate services. We specialize in connecting international buyers with exceptional properties in prime locations.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2 text-accent"></i>
+                            <span>Property Acquisition & Sales</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2 text-accent"></i>
+                            <span>Investment Opportunities</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2 text-accent"></i>
+                            <span>Diaspora Services</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-primary font-medium flex items-center">
+                        Browse Properties <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Featured <span class="text-primary">Properties</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Discover our curated selection of premium properties for sale and investment.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Modern Villa" class="w-full h-64 object-cover">
+                        <div class="property-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition duration-300 transform translate-y-4">
+                            <button class="bg-accent text-white px-6 py-2 rounded-lg font-medium">
+                                View Details
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                            For Sale
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Modern Beachfront Villa</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Mtwapa, Mombasa</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed mr-1"></i>
+                                <span class="mr-4">4 Beds</span>
+                                <i class="fas fa-bath mr-1"></i>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="text-xl font-bold text-primary">$1,250,000</div>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition duration-300">
+                            Schedule Viewing
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Luxury Apartment" class="w-full h-64 object-cover">
+                        <div class="property-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition duration-300 transform translate-y-4">
+                            <button class="bg-accent text-white px-6 py-2 rounded-lg font-medium">
+                                View Details
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                            Investment
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Downtown Luxury Apartment</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Kilifi, Mombasa Kenya</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed mr-1"></i>
+                                <span class="mr-4">2 Beds</span>
+                                <i class="fas fa-bath mr-1"></i>
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="text-xl font-bold text-primary">$850,000</div>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition duration-300">
+                            Schedule Viewing
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Mountain Retreat" class="w-full h-64 object-cover">
+                        <div class="property-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition duration-300 transform translate-y-4">
+                            <button class="bg-accent text-white px-6 py-2 rounded-lg font-medium">
+                                View Details
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                            For Sale
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mountain View Retreat</h3>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Rift Valley, Narok Kenya</span>
+                        </div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed mr-1"></i>
+                                <span class="mr-4">5 Beds</span>
+                                <i class="fas fa-bath mr-1"></i>
+                                <span>4 Baths</span>
+                            </div>
+                            <div class="text-xl font-bold text-primary">$2,100,000</div>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition duration-300">
+                            Schedule Viewing
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-primary transition duration-300">
+                    View All Properties
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Portfolio -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Design <span class="text-primary">Portfolio</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Explore our latest interior design projects and transformations.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="relative h-64 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modern Living Room" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Modern Living</h3>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Luxury Kitchen" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Luxury Kitchen</h3>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Bedroom Suite" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Bedroom Suite</h3>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1615529162924-f8605388463a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Home Office" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Home Office</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-secondary transition duration-300">
+                    View Full Portfolio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facebook Reels Integration -->
+    <section class="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Design <span class="text-primary">Reels</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Watch our latest design transformations and get inspired by our creative process.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="reel-container bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Design Reel" class="w-full h-64 object-cover">
+                        <div class="play-icon absolute inset-0 flex items-center justify-center opacity-90 transition duration-300">
+                            <div class="bg-black bg-opacity-50 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Modern Kitchen Transformation</h3>
+                        <p class="text-gray-600 mb-4">
+                            Watch how we transformed this outdated kitchen into a modern culinary space.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>2 days ago</span>
+                            <i class="far fa-heart ml-4 mr-2"></i>
+                            <span>1.2K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reel-container bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Design Reel" class="w-full h-64 object-cover">
+                        <div class="play-icon absolute inset-0 flex items-center justify-center opacity-90 transition duration-300">
+                            <div class="bg-black bg-opacity-50 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Luxury Bedroom Makeover</h3>
+                        <p class="text-gray-600 mb-4">
+                            See how we created a serene and luxurious bedroom retreat in just 3 days.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>1 week ago</span>
+                            <i class="far fa-heart ml-4 mr-2"></i>
+                            <span>3.4K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reel-container bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1615529162924-f8605388463a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Design Reel" class="w-full h-64 object-cover">
+                        <div class="play-icon absolute inset-0 flex items-center justify-center opacity-90 transition duration-300">
+                            <div class="bg-black bg-opacity-50 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Home Office Design Tips</h3>
+                        <p class="text-gray-600 mb-4">
+                            Essential tips for creating a productive and beautiful home office space.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>2 weeks ago</span>
+                            <i class="far fa-heart ml-4 mr-2"></i>
+                            <span>5.1K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-primary font-medium">
+                    <i class="fab fa-facebook text-blue-600 mr-2 text-xl"></i>
+                    Follow us on Facebook for more Reels
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Client <span class="text-primary">Testimonials</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Hear what our clients say about our real estate and design services.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-light p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "LuxeLiving helped us find our dream home and then transformed it into a masterpiece. Their attention to detail and professionalism is unmatched."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-light p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "As an overseas investor, I was nervous about buying property abroad. LuxeLiving made the process seamless and found me the perfect investment property."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-gray-600">International Investor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-light p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "The interior design team completely transformed our outdated office space. It's now a place our employees love to come to every day!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Amanda Rodriguez">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Amanda Rodriguez</h4>
+                            <p class="text-gray-600">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-blue-100">
+                Whether you're looking for a new property or want to transform your current space, our team is ready to help.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                    Schedule a Consultation
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Property & Design</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Bringing together premium real estate services and exceptional interior design to create spaces that inspire.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Interior Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Real Estate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Property Staging</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Renovation Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Diaspora Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>123 Design Avenue,Nairobi Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+254 7 123 456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@propertydesign.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-primary"></i>
+                            <span>+254 7 123 456</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Property & Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="/script.js"></script>   
+</body>
+</html>
