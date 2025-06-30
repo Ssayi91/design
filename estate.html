@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Housing Initiative | Property & Design Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/estate.css">
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/254700123456" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-home text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold text-primary">Property & Design</h1>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent transition duration-300">Home</a>
+                <a href="interior.html" class="font-medium hover:text-accent transition duration-300">Interior Design</a>
+                <a href="estate.html" class="font-medium text-accent border-b-2 border-accent pb-1">Real Estate</a>
+                <a href="portfolio.html" class="font-medium hover:text-accent transition duration-300">Portfolio</a>
+                <a href="about.html" class="font-medium hover:text-accent transition duration-300">About</a>
+                <a href="contact.html" class="font-medium hover:text-accent transition duration-300">Contact</a>
+            </nav>
+            
+            <div class="flex items-center">
+                <button class="hidden md:block bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mr-4">
+                    Book Consultation
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium py-2 border-b border-gray-200">Home</a>
+                <a href="interior-design.html" class="font-medium py-2 border-b border-gray-200">Interior Design</a>
+                <a href="real-estate.html" class="font-medium text-accent py-2 border-b border-gray-200">Real Estate</a>
+                <a href="portfolio.html" class="font-medium py-2 border-b border-gray-200">Portfolio</a>
+                <a href="about.html" class="font-medium py-2 border-b border-gray-200">About</a>
+                <a href="contact.html" class="font-medium py-2 border-b border-gray-200">Contact</a>
+                <button class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mt-4">
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-gray-50 to-gray-100 kenya-pattern">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Affordable Housing <span class="text-accent">Initiative</span>
+                </h1>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Quality homes for Kenyan families without compromising on design or comfort. Our commitment to addressing Kenya's housing deficit through innovative solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-primary transition duration-300">
+                        Explore Properties
+                    </button>
+                    <button class="border-2 border-accent text-accent px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition duration-300">
+                        <i class="fas fa-download mr-2"></i> Download Brochure
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="bg-primary w-80 h-80 rounded-full absolute -top-6 -left-6 z-0"></div>
+                    <div class="bg-accent w-72 h-72 rounded-full absolute -bottom-6 -right-6 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Affordable Housing in Kenya" 
+                         class="rounded-2xl shadow-2xl relative z-10 w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Housing Challenge -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Addressing Kenya's <span class="text-primary">Housing Challenge</span></h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    With a housing deficit of over 2 million units, Kenya Design & Estates is committed to providing quality, affordable solutions for Kenyan families.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="stats-card">
+                    <div class="text-5xl font-bold mb-2">2M+</div>
+                    <p class="text-blue-100">Housing deficit in Kenya</p>
+                </div>
+                
+                <div class="stats-card bg-gradient-to-r from-accent to-orange-500">
+                    <div class="text-5xl font-bold mb-2">64%</div>
+                    <p class="text-orange-100">Urban population living in informal settlements</p>
+                </div>
+                
+                <div class="stats-card bg-gradient-to-r from-primary to-secondary">
+                    <div class="text-5xl font-bold mb-2">3,500+</div>
+                    <p class="text-blue-100">Homes delivered since 2018</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Our Commitment to Affordable Housing</h3>
+                        <p class="text-gray-600 mb-4">
+                            At Kenya Design & Estates, we're addressing Kenya's housing deficit with quality, affordable solutions. Our core focus is developing modern two-bedroom bungalows and townhouses that combine functionality, style, and affordability.
+                        </p>
+                        <p class="text-gray-600">
+                            Inspired by Kenya's commitment to housing for all, we're creating communities where families can thrive without compromising on quality or design. Our approach integrates sustainable materials, innovative construction techniques, and community-focused planning.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Affordable housing community" 
+                             class="rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Types -->
+    <section class="py-20 bg-gradient-to-r from-gray-50 to-gray-100 kenya-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary">Housing Solutions</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Designed for Kenyan families seeking quality, comfort, and value in their homes.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="initiative-card">
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="feature-icon">
+                                <i class="fas fa-home text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-primary ml-4">Modern Bungalows</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Spacious two-bedroom bungalows designed for growing families. Each unit features:
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>2 bedrooms with built-in wardrobes</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>Modern kitchen with fittings</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>Private garden space</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>Secure compound with 24/7 security</span>
+                            </li>
+                        </ul>
+                        <div class="text-xl font-bold text-primary">Starting from KSh 2.5M</div>
+                    </div>
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="feature-icon">
+                                <i class="fas fa-building text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-primary ml-4">Townhouse Communities</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Contemporary townhouses designed for modern living with community amenities:
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>2-3 bedroom configurations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>Shared recreational facilities</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>Children's play areas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span>Community water harvesting</span>
+                            </li>
+                        </ul>
+                        <div class="text-xl font-bold text-primary">Starting from KSh 3.2M</div>
+                    </div>
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Featured <span class="text-primary">Properties</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Explore our affordable housing developments across Kenya.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Greenview Estate" 
+                             class="w-full h-full object-cover">
+                        <div class="property-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6 opacity-0 transition duration-300 transform translate-y-10">
+                            <h3 class="text-white text-xl font-bold mb-2">Greenview Estate</h3>
+                            <p class="text-gray-300 mb-4">Nairobi • 2 & 3 Bedroom Units</p>
+                            <button class="bg-accent text-white px-4 py-2 rounded-lg font-medium">
+                                View Details
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm">
+                            Ready to Occupy
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark">Greenview Estate</h3>
+                                <p class="text-gray-600">Nairobi Westlands</p>
+                            </div>
+                            <div class="text-primary text-xl font-bold">KSh 2.8M</div>
+                        </div>
+                        <div class="flex justify-between border-t border-gray-200 pt-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-accent mr-2"></i>
+                                <span>2-3 Bed</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bath text-accent mr-2"></i>
+                                <span>2 Bath</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-ruler-combined text-accent mr-2"></i>
+                                <span>850 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 relative">
+                        <img src="https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Hillside Gardens" 
+                             class="w-full h-full object-cover">
+                        <div class="property-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6 opacity-0 transition duration-300 transform translate-y-10">
+                            <h3 class="text-white text-xl font-bold mb-2">Hillside Gardens</h3>
+                            <p class="text-gray-300 mb-4">Kiambu • 2 Bedroom Bungalows</p>
+                            <button class="bg-accent text-white px-4 py-2 rounded-lg font-medium">
+                                View Details
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                            Phase 2 Launch
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark">Hillside Gardens</h3>
+                                <p class="text-gray-600">Kiambu County</p>
+                            </div>
+                            <div class="text-primary text-xl font-bold">KSh 2.5M</div>
+                        </div>
+                        <div class="flex justify-between border-t border-gray-200 pt-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-accent mr-2"></i>
+                                <span>2 Bed</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bath text-accent mr-2"></i>
+                                <span>2 Bath</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-ruler-combined text-accent mr-2"></i>
+                                <span>780 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 relative">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Lakeview Apartments" 
+                             class="w-full h-full object-cover">
+                        <div class="property-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6 opacity-0 transition duration-300 transform translate-y-10">
+                            <h3 class="text-white text-xl font-bold mb-2">Lakeview Apartments</h3>
+                            <p class="text-gray-300 mb-4">Kisumu • Affordable Apartments</p>
+                            <button class="bg-accent text-white px-4 py-2 rounded-lg font-medium">
+                                View Details
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm">
+                            Under Construction
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark">Lakeview Apartments</h3>
+                                <p class="text-gray-600">Kisumu County</p>
+                            </div>
+                            <div class="text-primary text-xl font-bold">KSh 1.9M</div>
+                        </div>
+                        <div class="flex justify-between border-t border-gray-200 pt-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-accent mr-2"></i>
+                                <span>1-2 Bed</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bath text-accent mr-2"></i>
+                                <span>1-2 Bath</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-ruler-combined text-accent mr-2"></i>
+                                <span>650-850 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-secondary transition duration-300">
+                    View All Properties
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing Options -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Affordable <span class="text-accent">Financing</span> Options</h2>
+                <p class="max-w-2xl mx-auto text-blue-100">
+                    We make homeownership accessible through flexible payment plans and partnerships.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-2xl">
+                    <div class="text-primary text-4xl font-bold mb-4">10-15-75</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Flexible Payment Plan</h3>
+                    <p class="text-gray-600 mb-4">
+                        Pay 10% deposit, 15% during construction, and the remaining 75% on completion. Spread your payments over the construction period.
+                    </p>
+                    <div class="mt-4">
+                        <span class="text-accent font-medium">Ideal for:</span>
+                        <p class="text-gray-600">Salaried professionals and business owners</p>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl">
+                    <div class="text-primary text-4xl font-bold mb-4">20-80</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Mortgage Partnership</h3>
+                    <p class="text-gray-600 mb-4">
+                        20% deposit with 80% financing through our partner banks at competitive mortgage rates.
+                    </p>
+                    <div class="mt-4">
+                        <span class="text-accent font-medium">Ideal for:</span>
+                        <p class="text-gray-600">First-time homebuyers with stable income</p>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl">
+                    <div class="text-primary text-4xl font-bold mb-4">5-95</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Diaspora Program</h3>
+                    <p class="text-gray-600 mb-4">
+                        Special program for Kenyans abroad: 5% deposit with the balance payable over 24 months.
+                    </p>
+                    <div class="mt-4">
+                        <span class="text-accent font-medium">Ideal for:</span>
+                        <p class="text-gray-600">Kenyans in the diaspora investing back home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Success <span class="text-primary">Stories</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Hear from families who have found their dream home through our initiative.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "As a teacher, I never thought I could own a home in Nairobi. Kenya Design & Estates made it possible with their affordable payment plan. My family now has a beautiful home!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Wanjiku M.</h4>
+                            <p class="text-gray-600">Homeowner, Greenview Estate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "The quality of construction exceeded our expectations. We thought affordable meant low quality, but we were pleasantly surprised. Our townhouse is beautiful and well-built."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Kamau K.</h4>
+                            <p class="text-gray-600">Homeowner, Hillside Gardens</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "As a Kenyan in the diaspora, I was nervous about investing back home. The team made the process seamless, and I now have a beautiful apartment in Kisumu for my retirement."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amanda Rodriguez">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Nyambura O.</h4>
+                            <p class="text-gray-600">Diaspora Investor, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-accent to-orange-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Own Your Dream Home?</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-orange-100">
+                Join thousands of Kenyan families who have found quality, affordable housing through our initiative.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-accent px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                    Schedule Site Visit
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-accent transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Chat with Our Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Property & Design</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Kenyan real estate and interior design services for local and diaspora clients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Real Estate</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Affordable Housing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Residential Properties</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial Properties</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Land for Sale</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Property Management</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="interior-design.html" class="text-gray-400 hover:text-white transition duration-300">Interior Design</a></li>
+                        <li><a href="real-estate.html" class="text-gray-400 hover:text-white transition duration-300">Real Estate</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>Westlands, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+254 700 123 456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>sales@propertyanddesign.co.ke</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-primary"></i>
+                            <span>+254 700 654 321</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Property & Design Kenya. All rights reserved. | Affordable Housing Initiative</p>
+            </div>
+        </div>
+    </footer>
+<script src="estate.js"></script>
+</body>
+</html>

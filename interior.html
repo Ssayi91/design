@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design | Property & Design Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="interior.css">
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/254700123456" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-home text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold text-primary">Property & Design</h1>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent transition duration-300">Home</a>
+                <a href="interior.html" class="font-medium text-accent border-b-2 border-accent pb-1">Interior Design</a>
+                <a href="estate.html" class="font-medium hover:text-accent transition duration-300">Real Estate</a>
+                <a href="portfolio.html" class="font-medium hover:text-accent transition duration-300">Portfolio</a>
+                <a href="about.html" class="font-medium hover:text-accent transition duration-300">About</a>
+                <a href="contact.html" class="font-medium hover:text-accent transition duration-300">Contact</a>
+            </nav>
+            
+            <div class="flex items-center">
+                <button class="hidden md:block bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mr-4">
+                    Book Consultation
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium py-2 border-b border-gray-200">Home</a>
+                <a href="interior-design.html" class="font-medium text-accent py-2 border-b border-gray-200">Interior Design</a>
+                <a href="real-estate.html" class="font-medium py-2 border-b border-gray-200">Real Estate</a>
+                <a href="portfolio.html" class="font-medium py-2 border-b border-gray-200">Portfolio</a>
+                <a href="about.html" class="font-medium py-2 border-b border-gray-200">About</a>
+                <a href="contact.html" class="font-medium py-2 border-b border-gray-200">Contact</a>
+                <button class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300 mt-4">
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-gray-50 to-gray-100 kenya-pattern">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Transform Your Space with <span class="text-accent">Kenyan Elegance</span>
+                </h1>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Our interior design services blend modern aesthetics with authentic Kenyan influences to create spaces that tell your unique story.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-primary transition duration-300">
+                        View Our Portfolio
+                    </button>
+                    <button class="border-2 border-accent text-accent px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition duration-300">
+                        <i class="fab fa-facebook mr-2"></i> Watch Reels
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="bg-primary w-80 h-80 rounded-full absolute -top-6 -left-6 z-0"></div>
+                    <div class="bg-accent w-72 h-72 rounded-full absolute -bottom-6 -right-6 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Kenyan Interior Design" 
+                         class="rounded-2xl shadow-2xl relative z-10 w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Philosophy -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary">Design Philosophy</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We create spaces that reflect Kenya's rich cultural heritage while embracing contemporary design principles.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 service-card rounded-xl">
+                    <div class="w-24 h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cultural Heritage</h3>
+                    <p class="text-gray-600">
+                        We incorporate authentic Kenyan elements like Maasai patterns, local crafts, and natural materials to celebrate our heritage.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 service-card rounded-xl">
+                    <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-sun text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Modern Functionality</h3>
+                    <p class="text-gray-600">
+                        Our designs blend traditional aesthetics with contemporary functionality to create spaces that work for modern Kenyan living.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 service-card rounded-xl">
+                    <div class="w-24 h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-recycle text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Sustainable Design</h3>
+                    <p class="text-gray-600">
+                        We prioritize locally-sourced materials and sustainable practices to create eco-friendly spaces that honor Kenya's natural beauty.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Services -->
+    <section class="py-20 bg-gradient-to-r from-gray-50 to-gray-100 kenya-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary">Design Services</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive interior design solutions for homes and businesses across Kenya.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Residential Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Transform your home into a sanctuary that reflects your personality and Kenyan heritage.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Complete home makeovers</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Single room transformations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Furniture selection & sourcing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Kitchen & bathroom renovations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Outdoor living spaces</span>
+                        </li>
+                    </ul>
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition duration-300">
+                        View Residential Projects
+                    </button>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-building text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Commercial Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Create inspiring work environments that impress clients and motivate your team.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Office spaces & work environments</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Retail stores & showrooms</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Restaurants & hospitality venues</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Hotel & resort interiors</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Brand integration</span>
+                        </li>
+                    </ul>
+                    <button class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-primary transition duration-300">
+                        View Commercial Projects
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Portfolio -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Featured <span class="text-primary">Design Projects</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Explore our Kenyan-inspired interior design transformations.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="design-card relative h-80 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Nairobi Apartment" class="w-full h-full object-cover">
+                    <div class="design-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6 opacity-0 transition duration-300 transform translate-y-10">
+                        <h3 class="text-white text-xl font-bold mb-2">Nairobi Apartment</h3>
+                        <p class="text-gray-300 mb-4">Modern living space with Kenyan art accents</p>
+                        <button class="bg-accent text-white px-4 py-2 rounded-lg font-medium self-start">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="design-card relative h-80 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Mombasa Villa" class="w-full h-full object-cover">
+                    <div class="design-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6 opacity-0 transition duration-300 transform translate-y-10">
+                        <h3 class="text-white text-xl font-bold mb-2">Mombasa Coastal Villa</h3>
+                        <p class="text-gray-300 mb-4">Beachfront property with Swahili influences</p>
+                        <button class="bg-accent text-white px-4 py-2 rounded-lg font-medium self-start">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="design-card relative h-80 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1615529162924-f8605388463a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Nairobi Office" class="w-full h-full object-cover">
+                    <div class="design-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-6 opacity-0 transition duration-300 transform translate-y-10">
+                        <h3 class="text-white text-xl font-bold mb-2">Nairobi Corporate Office</h3>
+                        <p class="text-gray-300 mb-4">Professional space with local craftsmanship</p>
+                        <button class="bg-accent text-white px-4 py-2 rounded-lg font-medium self-start">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-secondary transition duration-300">
+                    View Full Portfolio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facebook Reels Integration -->
+    <section class="py-20 bg-gradient-to-r from-gray-50 to-gray-100 kenya-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Design <span class="text-primary">Transformations</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Watch our latest design reels showcasing Kenyan interior transformations.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="reel-container bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Design Reel" class="w-full h-64 object-cover">
+                        <div class="play-icon absolute inset-0 flex items-center justify-center opacity-90 transition duration-300">
+                            <div class="bg-black bg-opacity-50 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm">
+                            Nairobi
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kitchen Makeover in Karen</h3>
+                        <p class="text-gray-600 mb-4">
+                            Watch how we transformed this outdated kitchen into a modern culinary space with Kenyan accents.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>2 days ago</span>
+                            <i class="far fa-heart ml-4 mr-2"></i>
+                            <span>1.2K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reel-container bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Design Reel" class="w-full h-64 object-cover">
+                        <div class="play-icon absolute inset-0 flex items-center justify-center opacity-90 transition duration-300">
+                            <div class="bg-black bg-opacity-50 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                            Mombasa
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Coastal Living Room</h3>
+                        <p class="text-gray-600 mb-4">
+                            See how we created a breezy coastal living space with Swahili design elements.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>1 week ago</span>
+                            <i class="far fa-heart ml-4 mr-2"></i>
+                            <span>3.4K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reel-container bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1615529162924-f8605388463a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Design Reel" class="w-full h-64 object-cover">
+                        <div class="play-icon absolute inset-0 flex items-center justify-center opacity-90 transition duration-300">
+                            <div class="bg-black bg-opacity-50 w-16 h-16 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm">
+                            Kisumu
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lakeside Office Transformation</h3>
+                        <p class="text-gray-600 mb-4">
+                            From drab to vibrant - see how we transformed this lakeside office with Luo patterns.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>2 weeks ago</span>
+                            <i class="far fa-heart ml-4 mr-2"></i>
+                            <span>5.1K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium">
+                    <i class="fab fa-facebook mr-2 text-xl"></i>
+                    Follow us on Facebook for more Reels
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Client <span class="text-primary">Testimonials</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Hear what our clients say about our interior design services.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-light p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Property & Design transformed our outdated home into a modern sanctuary with authentic Kenyan touches. Their attention to detail and cultural sensitivity is unmatched."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Mwangi</h4>
+                            <p class="text-gray-600">Nairobi Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-light p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "As a diaspora investor, I wanted my Kenyan property to reflect local heritage. Property & Design created a perfect blend of modern comfort and cultural authenticity."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">James Omondi</h4>
+                            <p class="text-gray-600">UK Investor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-light p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "The design team completely transformed our coastal resort. Guests now rave about the authentic Swahili design elements combined with modern luxury."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Amanda Rodriguez">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Amina Hassan</h4>
+                            <p class="text-gray-600">Resort Owner, Mombasa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-blue-100">
+                Book a consultation with our design team to create your dream space with authentic Kenyan elegance.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                    Book Design Consultation
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Property & Design</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Kenyan real estate and interior design services for local and diaspora clients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Design Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Residential Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Renovation Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Space Planning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Furniture Selection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="interior-design.html" class="text-gray-400 hover:text-white transition duration-300">Interior Design</a></li>
+                        <li><a href="real-estate.html" class="text-gray-400 hover:text-white transition duration-300">Real Estate</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>Westlands, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+254 700 123 456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>design@propertyanddesign.co.ke</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-primary"></i>
+                            <span>+254 700 654 321</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Property & Design Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="./interior.js"></script>
+</body>
+</html>
